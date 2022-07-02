@@ -15,14 +15,23 @@ The List-Unsubscribe header must be added by the application. It is recommended 
 
 ### Linux
 
-- Build with: GOARCH=amd64 GOOS=linux go build
-- Upload unsubmail to the PowerMTA into /opt/pmta
-- Make sure it's executable for user pmta
+Build linux binary:
+
+	make linux
+
+Upload bin/linux/unsubmail to the PowerMTA. 
+
+Move unsubmail to /opt/pmta and make sure it's executable for user pmta.
 
 ### Windows
 
-- Build with: GOARCH=amd64 GOOS=windows go build
-- Upload unsubmail.exe to \pmta\bin
+Build windows binary:
+
+	make windows
+
+Upload bin/windows/unsubmail.exe to the PowerMTA.
+
+Move unsubmail to \pmta\bin.
 
 ## Usage
 
