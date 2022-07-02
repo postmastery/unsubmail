@@ -13,6 +13,8 @@ The List-Unsubscribe header must be added by the application. It is recommended 
 
 ## Install
 
+See [releases](https://github.com/postmastery/unsubmail/releases) for pre-built binaries.
+
 ### Linux
 
 Build linux binary:
