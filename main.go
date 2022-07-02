@@ -81,7 +81,7 @@ func main() {
 		os.Exit(75) // EX_TEMPFAIL, will cause 4.0.0 bounce
 	}
 	resp.Body.Close()
-	if strings.HasPrefix(resp.Status, "2") == false {
+	if !strings.HasPrefix(resp.Status, "2") {
 		log.Printf("Error calling %s: %s", url, http.StatusText(resp.StatusCode))
 		os.Exit(75) // EX_TEMPFAIL, will cause 4.0.0 bounce
 	}

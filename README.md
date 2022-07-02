@@ -15,14 +15,14 @@ The List-Unsubscribe header must be added by the application. It is recommended 
 
 ### Linux
 
-- Download unsubmail from [https://postmastery.egnyte.com/dl/68U0V2AK3a](https://postmastery.egnyte.com/dl/68U0V2AK3a)
+- Build with: GOARCH=amd64 GOOS=linux go build
 - Upload unsubmail to the PowerMTA into /opt/pmta
 - Make sure it's executable for user pmta
 
 ### Windows
 
-- Download unsubmail.exe from [https://postmastery.egnyte.com/dl/IHWT0nhSed](https://postmastery.egnyte.com/dl/IHWT0nhSed)
-- Move it to \pmta\bin
+- Build with: GOARCH=amd64 GOOS=windows go build
+- Upload unsubmail.exe to \pmta\bin
 
 ## Usage
 
